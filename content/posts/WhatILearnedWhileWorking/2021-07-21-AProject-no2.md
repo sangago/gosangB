@@ -1,34 +1,35 @@
 ---
 title: "[AProject]"
-date: "2021-07-15T20:40:32.169Z"
+date: "2021-07-16T20:40:32.169Z"
 template: "post"
 draft: false
-slug: "work/AProject/no1"
+slug: "work/AProject/no2"
 category: "What I learned while working"
 tags:
  - "work"
  - "AProject"
- - "think"
-description: "VO대신 MAP을 사용하는 것과, DTO와 MAP 사용..."
+ - "tip/javascript"
+description: "자바스크립트 모듈 변수 선언시 주의 사항"
 ---
 
-# VO, DTO, MAP
+# 자바스크립트 모듈 변수 선언시 주의 사항
 - - - - 
 
+자바스크립를 모듈화 하여 사용 할 때 변수명을 지을때 주의 해야함
 
-어드민 리스트에서 조회와 관련한 데이터는 VO를 만들어 관리했음
+다른 모듈에서 중복으로 사용 할 수도 있기 때문에 변수를 묶어서 선언해주도록 함
 
-그런데 A님이 더이상 VO를 생성하지 말고 MAP을 사용하라고 하심
+```javascript
 
-사용이 많지 않은 부분이여서 MAP을 이용하는게 더 효율?적이겠다는 생각이 들었음(개인적인 생각과 추측)
+var member = {
+    code : "100"
+    name : "홍길동"
+    age : "20"
+}
+
+console.log(member.code);
+console.log(member.name);
+console.log(member.age);
 
 
-그리고 A님은 비즈니스로직에서 DTO보다 MAP을 주로 사용 하셨음.
-
-DTO대신 MAP을 사용했을때 중간에 컬럼에 변경사항이 있거나, DTO에 추가하기 애매하다고 생각되는 변수를 담을 수 있어서 좋다는 생각이 들었음.
-
-
-
-DTO대신 MAP 사용에 대해 찾아봤는데 객체지향프로그래밍 관점에서 논란이 있음.
-
-나중에 더 공부해보는걸로 마무리
+```
