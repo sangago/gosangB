@@ -1,5 +1,5 @@
 ---
-title: "[AProject]"
+title: "[AProject]자바스크립트 변수 선언 주의 사항"
 date: "2021-07-16T20:40:32.169Z"
 template: "post"
 draft: false
@@ -8,7 +8,7 @@ category: "What I learned while working"
 tags:
  - "work"
  - "AProject"
- - "tip/javascript"
+ - "javascript"
 description: "자바스크립트 모듈 변수 선언시 주의 사항"
 ---
 
