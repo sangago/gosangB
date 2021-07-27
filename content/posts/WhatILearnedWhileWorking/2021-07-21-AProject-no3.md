@@ -10,6 +10,7 @@ tags:
  - "AProject"
  - "open graph"
  - "meta tag"
+ - "cash"
 description: "카카오스토리와 페이스북 공유하기에서의 오픈그래프"
 ---
 
@@ -29,3 +30,19 @@ description: "카카오스토리와 페이스북 공유하기에서의 오픈그
 링크가 암호화 되면서 예약문자가 생길 수도 있음. (/ :  = & + -)
 
 복호화 하는 과정에서 예약 문자로 인해 URL주소가 온전하지 않음.
+
+
+
+## OG TAG를 수정했는데 내용이 바뀌지 않는 경우 캐시 삭제
+
+카카오톡, 카카오스토리, 페이스북 모두 캐시를 직접 제거해줘야 함
+
+
+- 카카오
+
+https://developers.kakao.com/tool/clear/og
+
+
+- 페이스북
+
+https://developers.facebook.com/tools/debug
